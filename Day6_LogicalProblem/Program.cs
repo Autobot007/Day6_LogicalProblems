@@ -12,7 +12,7 @@ namespace Day6_LogicalProblems
            
             while (true)
             {
-                Console.WriteLine("Enter \n 1 for Fibbonacci series \n 2 for Perfect Number \n 3 for Prime Number");
+                Console.WriteLine("Enter the number  \n 1 for Fibbonacci series \n 2 for Perfect Number \n 3 for Prime Number \n 4 for Reverse Number");
                 int enter = Convert.ToInt32(Console.ReadLine());
                 switch (enter)
                 {
@@ -29,6 +29,10 @@ namespace Day6_LogicalProblems
                         PrimeNumber.Q2PrimeNumber();
                         Console.WriteLine("");
                         break;
+                    case 4:
+                        ReverseNumber.Q4reverseNumber();
+                        Console.WriteLine("");
+                        break;
                     default:
                         Console.WriteLine("");
                         break;
@@ -36,8 +40,7 @@ namespace Day6_LogicalProblems
 
             }
 
-            FibbonacciSeries problem1 = new FibbonacciSeries();
-            problem1.PrintFibbonacci();
+           
         }
     }
 } 

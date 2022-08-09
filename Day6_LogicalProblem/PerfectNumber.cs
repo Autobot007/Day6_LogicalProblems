@@ -11,8 +11,9 @@ namespace Day6_LogicalProblem
 
         public static void Q2Perfectnumber()
         {
+            Console.WriteLine("Enter Number");
             int num = Convert.ToInt16(Console.ReadLine());
-            int sum = 1;
+            var sum = 1;
 
             for (int i = 2; i * i <= num; i++)
             {
@@ -35,4 +36,4 @@ namespace Day6_LogicalProblem
         }
     }
 }
- 
+  
