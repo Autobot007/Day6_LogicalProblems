@@ -12,7 +12,7 @@ namespace Day6_LogicalProblems
            
             while (true)
             {
-                Console.WriteLine("Enter the number  \n 1 for Fibbonacci series \n 2 for Perfect Number \n 3 for Prime Number \n 4 for Reverse Number");
+                Console.WriteLine("Enter the number  \n 1 for Fibbonacci series \n 2 for Perfect Number \n 3 for Prime Number \n 4 for Reverse Number\n 5 for Coupon Number\n 6 for Stopwatch");
                 int enter = Convert.ToInt32(Console.ReadLine());
                 switch (enter)
                 {
@@ -33,8 +33,14 @@ namespace Day6_LogicalProblems
                         ReverseNumber.Q4reverseNumber();
                         Console.WriteLine("");
                         break;
+                    case 5:
+                        CouponNumber.Coupon();
+                        break;
+                    case 6:
+                        StopWatch.Timer();
+                        break;
                     default:
-                        Console.WriteLine("");
+                        Console.WriteLine("Please Enter Something");
                         break;
                 }
 
@@ -43,5 +49,4 @@ namespace Day6_LogicalProblems
            
         }
     }
-} 
-
+}   
